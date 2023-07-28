@@ -20,8 +20,7 @@ steps:
     mavenVersionOption: 'Default'
     mavenAuthenticateFeed: false
     effectivePomSkip: false
-    sonarQubeRunAnalysis: true
-    sqMavenPluginVersionChoice: 'latest'
+    sonarQubeRunAnalysis: false
 - task: PublishBuildArtifacts@1
   inputs:
             PathtoPublish: '$(Build.ArtifactStagingDirectory)'
